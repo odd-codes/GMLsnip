@@ -2,8 +2,6 @@
  * == gml_syntax.js ==
  *
  * A JavaScript syntax highligher for GameMaker Language.
- *    Includes local and global variable scoping and
- *    documentation function-linking (requires gm_docs2.js)
  *
  * @file      This is not a language/syntax validator.
  *       
@@ -20,10 +18,10 @@
  *                2) http://thestepevent.com
  *                3) https://zackbanack.com
  *
- * @version   v0.9.8
- * @date      January 7, 2019
+ * @version   v0.9.9
+ * @date      March 18, 2019
  */
-const GM_VERSION = "v0.9.7";
+const GM_VERSION = "v0.9.9";
 const ESCAPE_PREFIX = 'gz_SPECIAL_ESCAPE_';
 const GM_TOKEN_TYPES = [{
     regex: /^(?:gz_SPECIAL_ESCAPE_AMP|gz_SPECIAL_ESCAPE_LT|gz_SPECIAL_ESCAPE_GT|gz_SPECIAL_ESCAPE_NL|gz_SPECIAL_ESCAPE_TAB)/,
@@ -90,17 +88,16 @@ function gml_find_replace(str, find_arr, replace_arr) {
     return str;
 }
 /**
- * Pretty-prints GameMaker Language contained within 
- *  HTML div elements of the class "gm_codeblock".
+ * Parses GameMaker Language
  *
  * Call this script once on page body onload.
  *
  * @author  Zack Banack <https://zackbanack.com>
  *
  * @param [String]   input_str      Optional, string to tokenize
- * @return {Array}    return_stack   Token objects (class and name)
+ * @return {Array}   return_stack   Token objects (class and name)
  */
-function gml_syntax(input_str, include_links) {
+function gml_syntax(input_str) {
     let stack_classes = [];
     let stack_contents = [];
     // Pull (and clean) the raw data from the codeblock
