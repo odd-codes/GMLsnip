@@ -32,7 +32,7 @@ window.onload = function() {
  */
 function demo_init() {
     // Make text input box the focused element
-    document.getElementById('gz_dev_input').focus();
+    // document.getElementById('gz_dev_input').focus();
 
     // Establish listeners that trigger the snippet generation
     init_listeners();
