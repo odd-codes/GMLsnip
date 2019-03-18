@@ -1,5 +1,5 @@
 # GMLsnip.com
-GML syntax highlighter &amp; GameMaker code snippet creator
+Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog.
 
 [http://gmlsnip.com](http://gmlsnip.com)
 
