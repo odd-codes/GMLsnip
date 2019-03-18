@@ -412,3 +412,9 @@ h3 {
 ul {
     text-align: left
 }
+
+.news {
+    padding:10px;
+    background-color:rgba(0,0,0,0.1);
+    border-radius:8px;
+}
