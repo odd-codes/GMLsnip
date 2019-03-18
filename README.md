@@ -1,7 +1,7 @@
 # GMLsnip.com
 Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog.
 
-[http://gmlsnip.com](http://gmlsnip.com)
+[https://gmlsnip.com](https://gmlsnip.com)
 
 ## Built on
 * [GML Syntax](https://github.com/zbanack/gml_syntax)
