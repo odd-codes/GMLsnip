@@ -7,7 +7,7 @@ Also available as a [browser extension](https://github.com/zbanack/GMLsnip-Addon
 
 ## API Parameters
 [https://www.gmlsnip.com/api/](https://www.gmlsnip.com/api/)
-* `input_str``snippet_name``use_lines``use_docs``use_copy``use_tooltips`
+* `input_str` `snippet_name` `use_lines` `use_docs` `use_copy` `use_tooltips`
 
 ## Built on
 * [GML Syntax](https://github.com/zbanack/gml_syntax)
