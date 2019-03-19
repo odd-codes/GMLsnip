@@ -27,12 +27,12 @@
                 let url_str = window.location.href;
                 let url = new URL(url_str);
 
-                let input_str = url.searchParams.get("input_str");
-                let snippet_name = url.searchParams.get("snippet_name");
-                let use_lines = url.searchParams.get("use_lines");
-                let use_docs = url.searchParams.get("use_docs");
-                let use_copy = url.searchParams.get("use_copy");
-                let use_tooltips = url.searchParams.get("use_tooltips");
+                let input_str = url.searchParams.get("input_str") || '';
+                let snippet_name = url.searchParams.get("snippet_name") || '';
+                let use_lines = url.searchParams.get("use_lines") || true;
+                let use_docs = url.searchParams.get("use_docs") || true;
+                let use_copy = url.searchParams.get("use_copy") || true;
+                let use_tooltips = url.searchParams.get("use_tooltips") || true;
 
                 let gen = gm_generate(input_str,
                     snippet_name,
