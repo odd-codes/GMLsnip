@@ -1,5 +1,5 @@
 # GMLsnip.com
-Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog.
+Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog. [Browser extension](https://github.com/zbanack/GMLsnip-Addon/).
 
 [https://gmlsnip.com](https://gmlsnip.com)
 
