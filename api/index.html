@@ -27,12 +27,12 @@
                 let url_str = window.location.href;
                 let url = new URL(url_str);
 
-                let input_str = url.searchParams.get("input_str") || '';
-                let snippet_name = url.searchParams.get("snippet_name") || '';
-                let use_lines = url.searchParams.get("use_lines") || true;
-                let use_docs = url.searchParams.get("use_docs") || true;
-                let use_copy = url.searchParams.get("use_copy") || true;
-                let use_tooltips = url.searchParams.get("use_tooltips") || true;
+                let input_str = atob(url.searchParams.get("input_str") || '');
+                let snippet_name = atob(url.searchParams.get("snippet_name") || '');
+                let use_lines = (url.searchParams.get("use_lines") || true);
+                let use_docs = (url.searchParams.get("use_docs") || true);
+                let use_copy = (url.searchParams.get("use_copy") || true);
+                let use_tooltips = (url.searchParams.get("use_tooltips") || true);
 
                 let gen = gm_generate(input_str,
                     snippet_name,
@@ -43,14 +43,17 @@
                 );
 
                 let output = {
-                    "body": escape(gen.return_html),
-                    "head": escape(gen.return_css)
+                    "body": encodeURI(gen.return_html),
+                    "head": encodeURI(gen.return_css)
                 }
 
                 let formatted = JSON.stringify(output);
 
-                // console.log(formatted);
                 document.getElementsByTagName('p')[0].innerHTML =  formatted;
+
+                // output decoded JSON to the console, for debugging reference
+                // console.log(decodeURI(output.body));
+                // console.log(decodeURI(output.head));
             }
         </script>
     </head>
