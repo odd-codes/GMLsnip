@@ -20,6 +20,8 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91441927-10"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -50,4 +52,6 @@
     <meta property="og:image" content="https://www.gmlsnip.com/img/promo.jpg" />
     <meta property="og:image:width" content="960" />
     <meta property="og:image:height" content="540" />
+
+    <script>function hide_social() {document.getElementsByClassName('z-ico-bar')[0].style.display = "none";}</script>
 </head>

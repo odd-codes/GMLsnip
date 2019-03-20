@@ -3,12 +3,12 @@
     
     <?php
         $page_title = "GML syntax highlighter & GameMaker code snippet creator";
-        include "php/header.php"
+        include "components/header.php"
     ?>
 
     <body>
 
-    <?php include "php/nav.php" ?>
+    <?php include "components/nav.php" ?>
 
     <div class="container">
     <h1>GameMaker Language pretty-printing</h1>

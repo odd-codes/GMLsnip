@@ -3,12 +3,13 @@
     
     <?php
         $page_title = "GMLsnip | API Docs";
-        include "../php/header.php"
+        include "../components/header.php"
     ?>
 
     <body>
 
-    <?php include "../php/nav.php" ?>
+    <?php include "../components/nav.php" ?>
+    <?php include "../components/share.php" ?>
 
     <div class="container">
 

@@ -150,3 +150,101 @@ body {
     padding:1.5rem;
     color:rgba(0,0,0,0.7);
 }
+
+
+
+
+
+/* Social media */
+
+.z-ico-bar {
+  position: fixed;
+  top: 45%;
+  right:0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:1000;
+  padding:0;
+  margin:0;
+}
+
+.z-ico-bar a {
+  font-family: "Font Awesome 5 Free"; font-weight: 400;
+  display: block;
+  text-align: center;
+  margin:0;
+  padding:0;
+  width:48px;
+  height:48px;
+  transition: all 0.3s ease;
+  
+  padding:0;
+  margin:0;
+  font-size: 20px;
+  line-height:48px;
+  opacity:1;
+}
+
+.z-ico-bar a:hover {
+  opacity:0.75;
+}
+
+/* Social Sharing */
+.z-ico-fb {
+  background: #3B5998;
+  color: white;
+}
+
+.z-ico-tw {
+  background: #55ACEE;
+  color: white;
+}
+
+.z-ico-goo {
+  background: #dd4b39;
+  color: white;
+}
+
+.z-ico-pin {
+  background: #C92228;
+  color: white;
+}
+
+.z-ico-red {
+  background: #ff4500;
+  color: white;
+}
+
+.z-ico-hide {
+  background: transparent;
+  color: #808080;
+}
+
+@media screen and (max-width:1080px) {
+  .z-ico-bar {
+    bottom:0;
+    right:0;
+    opacity:0.9;
+  -webkit-transform: translateY(100%) translateY(-48px);
+  -ms-transform: translateY(100%) translateY(-48px);
+  -o-transform: translateY(100%) translateY(-48px);
+  transform: translateY(100%) translateY(-48px);
+
+  }
+  .z-ico-bar a {
+    display:inline-block;
+    margin:0;
+    margin-left:-4px;
+    padding:0;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .z-ico-bar {
+    width:100%;
+  }
+  .z-ico-bar a {
+    width:16.60%;
+  }
+}

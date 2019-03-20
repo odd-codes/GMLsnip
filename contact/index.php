@@ -3,12 +3,12 @@
     
     <?php
         $page_title = "GMLsnip | Contact";
-        include "../php/header.php"
+        include "../components/header.php"
     ?>
 
     <body>
 
-    <?php include "../php/nav.php" ?>
+    <?php include "../components/nav.php" ?>
 
     <div class="container">
         <h1>Contact GMLsnip</h1>
