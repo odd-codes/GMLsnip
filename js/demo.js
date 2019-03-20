@@ -120,8 +120,6 @@ function has_update() {
         use_tooltips
     );
 
-    console.log('here');
-
     // Output the CSS/JS and HTML to the respective elements
     document.getElementById('gz_dev_output_head').value = gen.return_css;
     document.getElementById('gz_dev_output_html').value = gen.return_html;
