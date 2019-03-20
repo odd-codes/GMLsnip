@@ -6,34 +6,6 @@
 </url>
 
 <url>
-<loc>http://www.gmlsnip.com</loc>
-</url>
-
-<url>
-<loc>https://gmlsnip.com</loc>
-</url>
-
-<url>
-<loc>http://gmlsnip.com</loc>
-</url>
-
-<url>
-<loc>https://www.gmlsnip.com/index.html</loc>
-</url>
-
-<url>
-<loc>http://www.gmlsnip.com/index.html</loc>
-</url>
-
-<url>
-<loc>https://gmlsnip.com/index.html</loc>
-</url>
-
-<url>
-<loc>http://gmlsnip.com/index.html</loc>
-</url>
-
-<url>
 <loc>https://www.gmlsnip.com/about</loc>
 </url>
 
@@ -51,6 +23,26 @@
 
 <url>
 <loc>https://www.gmlsnip.com/docs</loc>
+</url>
+
+<url>
+<loc>https://www.gmlsnip.com/github</loc>
+</url>
+
+<url>
+<loc>https://www.gmlsnip.com/resources</loc>
+</url>
+
+<url>
+<loc>https://www.gmlsnip.com/support</loc>
+</url>
+
+<url>
+<loc>https://www.gmlsnip.com/contact</loc>
+</url>
+
+<url>
+<loc>https://www.gmlsnip.com/github</loc>
 </url>
 
 </urlset>

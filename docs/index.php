@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>GMLsnip | API Docs</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <link href='https://fonts.googleapis.com/css?family=Raleway:30,300,600' rel='stylesheet' type='text/css'>
-
-        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-
-        <link rel="icon" type="image/png" href="../img/favicon.png">
-
-        <style>
-
-        .container {
-            padding-top:8rem;
-        }
-
-        .docs-header {
-            margin-top:4rem;
-            text-transform: uppercase;
-            font-size: 1.4rem;
-            letter-spacing: .08rem;
-            font-weight: 600;
-        }
-
-        body {
-            border-left:4px solid #25a083;
-        }
-        </style>
-    </head>
+    
+    <?php
+        $page_title = "GMLsnip | API Docs";
+        include "../php/header.php"
+    ?>
 
     <body>
 
-<?php include "../php/nav.php" ?>
+    <?php include "../php/nav.php" ?>
 
     <div class="container">
 
