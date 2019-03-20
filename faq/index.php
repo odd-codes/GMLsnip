@@ -17,71 +17,74 @@
         <hr />
 
         <h2 class="question">What is GMLsnip?</h2>
-        <p class="answer">GMLsnip.com allows GameMaker developers to generate stylized GameMaker Language code snippets they can put on their own websites.</p>
+        <p class="answer">GMLsnip allows GameMaker developers to create HTML-embeddable, stylized GameMaker Language code snippets. This is useful for the tutorial-making community, particularly. Novice game makers referencing tutorials online may have an easier time following along if the code they see on the webpage closely resembles the code they see in the vanilla GMS2 IDE.</p>
 
         <h2 class="question">Why did you make GMLsnip?</h2>
-        <p class="answer">My name is <a href="https://www.zackbanack.com" title="Zack Banack">Zack Banack</a> and I've been making games for over a decade. This tool was originally going to be exclusive to <a href="http://thestepevent.com" title="The Step Event">The Step Event</a>, an educational GameMaker side project of mine. But, I quickly realized a lot of people could get use out of a utility like this.
+        <p class="answer">My name is <a href="https://www.zackbanack.com" title="Zack Banack">Zack Banack</a> and I've been making games for over a decade, both as a hobby and a job. The GMLsnip tool was originally going to be exclusive to <a href="http://thestepevent.com" title="The Step Event">The Step Event</a>, a GameMaker tutorial series side project of mine. But, I quickly realized a lot of people could get use out of a utility like this.
         </p>
 
         <h2 class="question">Why is this free?</h2>
-        <p class="answer">I'm keeping GMLsnip free because I believe in free coding resources. My mission of The Step Event is to create the tutorials and resources I wish I had when I was new to game development. Plus, the GameMaker community is a small and tight-knit one.</p>
+        <p class="answer">The GameMaker community is an altruistic community. I'm keeping GMLsnip free because I believe in free coding resources. My mission, since starting The Step Event, has been to create the tutorials and resources I wish I had when I was new to game development. This includes the means of how information is consumed.</p>
 
         <h2 class="question">How can I support GMLsnip?</h2>
-        <p class="answer">If you want to support this project, you can disable ad blocking software for this page. If you're feeling highly generous, you can <a href="https://paypal.me/zackbanack">make a donation</a>. Donations are completely optional but highly appreciated!</p>
+        <p class="answer">If you want to support this project, consider disabling ad blocking software for the website. If you're feeling highly generous and want to keep this project up and running (hosting costs money), you can <a href="/support">make a donation</a>. Donations are completely optional but highly appreciated!</p>
 
-        <h2 class="question">Where do I install the Google Chrome browser extension or Mozilla Firefox addon?</h2>
-        <p class="answer">You can get GMLsnip on your desktop Google Chrome browser via the <a href="https://chrome.google.com/webstore/detail/gml-syntax-highlighter/ooagiaejlpeookdifcncgcdphmbhpfjn/related">Chrome web store</a>. For Firefox users, check out the <a href="https://addons.mozilla.org/en-US/firefox/addon/gml-syntax-highlighter/">this link</a>.</p>
+        <h2 class="question">Can I change the appearance of GML on <i>other</i> websites?</h2>
+        <p class="answer">Yes! GMLsnip offers a <a href="/addon">browser Extension/Addon</a>. Using the Google Chrome browser Extension or Mozilla Firefox browser Addon, it's possible to change GML codeblocks on websites like the GameMaker subreddit, the official YoYo Games forums, and the official YoYo Games documentation.</p>
 
-        <h2 class="question">What does the browser extension do?</h2>
-        <p class="answer">Using the (optional) browser extension, you'll be able GameMaker Language code written in your browser just as you would in the Studio IDE. Transform dull GML code into pretty-printed, colorful code snippets across the web. Add a coat of fresh paint to the /r/gamemaker, the YoYo Games Forum, and the official GameMaker docs.</p>
+        <h2 class="question">What does the GMLSnip Browser Addon do?</h2>
+        <p class="answer">Using the browser Extension/Addon, you'll be able to see GameMaker Language code displayed in your browser just as you would in the Studio IDE. Transform dull GML code into pretty-printed, colorful code snippets across the web. Add a coat of fresh paint to the /r/gamemaker, the YoYo Games Forum, and the official GameMaker docs. Learn more about the <a href="/addon">browser Extension/Addon</a>.</p>
 
+        <h2 class="question">Why doesn't my code look right?</h2>
+        <p class="answer">There may be syntax edge-cases that break the parser. Also, this utility is not a code validator nor a linter. It will not "beautify" your code, clean it up, or debug. GMLsnip simply analyizes your code and stylizes it to the best of its abilities.</p>
 
         <h2 class="question">Why am I getting a message saying I need JavaScript?</h2>
         <p class="answer">GMLsnip needs JavaScript in order to make sense of the GML code you input. It runs a lexer, something that tokenizes (categorizes), strings of text. That's how this tool is able to distinguish variables from functions and numbers from strings. Fortunately, after the code snippet is generated, JavaScript is no longer needed.</p>
 
-
-        <h2 class="question">Why doesn't my code look right?</h2>
-        <p class="answer">There may be syntax edge-cases. Also, this utility is not a code validator nor a linter.</p>
-
-
-        <h2 class="question">Why is the code so big?</h2>
+        <h2 class="question">Why is the output code so big?</h2>
         <p class="answer">Because the snippets generated by GMLsnip do not require JavaScript, they cannot be pretty-printed on the fly. While this means they're viewable to a larger percentage of the internet, it comes at the expense of being more bloated. The elements in the HTML, CSS, and clipboard script are named the way they are as to have a slim-to-none chance of interferring with anything else on your website. Overkill? Probably.</p>
-
 
         <h2 class="question">Why isn't the clipboard working?</h2>
         <p class="answer">While most modern JavaScript-enabled browsers should be able to copy the content via the clipboard button, some (notably, mobile) still fail. Luckily, the code can be manually highlighted and either right-click -> copy'd or ctrl/command + c'd.</p>
 
-
         <h2 class="question">Can I remove the attributions and credit in the code?</h2>
-        <p class="answer">I highly encourage you to keep the credits and link back to <a href="https://www.GMLsnip.com" title="GMLsnip.com">GMLsnip.com</a> in the code that's generated on this website. If you <i>must</i> remove the credits, then please consider making a donation above as compensation.</p>
-
+        <p class="answer">I highly encourage you to keep the credits and link back to <a href="https://www.GMLsnip.com" title="GMLsnip.com">GMLsnip.com</a> in the code that's generated on this website. If you <i>must</i> remove the credits, then please consider <a href="/support">making a donation</a> as compensation.</p>
 
         <h2 class="question">Is GMLsnip affiliated with YoYo Games or GameMaker?</h2>
         <p class="answer">No. This website is not &mdash; nor does it claim to be &mdash; affiliated with YoYo Games Ltd., GameMaker: Studio, GameMaker Studio 2, or any related products.</p>
 
-
         <h2 class="question">Will my snippets still work if GMLsnip.com goes down?</h2>
-        <p class="answer">Yes! Once you copy and paste the code from this website onto yours, it's completely independent from GMLsnip.com.</p>
-
+        <p class="answer">Yes! Once you copy and paste the code from this website onto yours, it's completely independent from <a href="/">GMLsnip.com</a>.</p>
 
         <h2 class="question">The code snippet looks different on my website. Why?</h2>
-        <p class="answer">Your website's CSS or rules may be overriding GMLsnip's styling. Look for "!important".</p>
+        <p class="answer">Your website's CSS rules may be overriding GMLsnip's styling. You may be using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception">"!important"</a> rule in your code.</p>
 
+        <h2 class="question">Is this project open source? Can I contribute?</h2>
+        <p class="answer">Yes! You can view all the project repositories related to GMLsnip <a href="/github">here</a>.</p>
 
-        <h2 class="question">Is this project open source?</h2>
-            <ul class="answer">
-                <li>The repo associated with this website is the <a href="https://github.com/zbanack/GMLsnip" title="GMLsnip Github repo">GMLsnip Github repo</a>.</li>
-            <li>The browser extension/addon code can be found on the <a href="https://github.com/zbanack/GMLsnip-Addon" title="GMLsnip-Addon repo">GMLsnip-Addon repo</a>.</li>
-            <li><a href="https://github.com/zbanack/gml_syntax" title="gml_syntax Githubrepo">gml_syntax</a> is my JavaScript syntax parser for the GameMaker Language.</li>
-            <li><a href="https://github.com/zbanack/GameMaker-Language-Functions" title="GameMaker Language Functions Github repo">GameMaker Language Functions</a> is a comprehensive, unofficial digest of every single GM8, GMS1, and GMS2 function.</li>
-        </ul>
+        <h2 class="question">GMLsnip incorrectly linked a function/provided the wrong tooltip description</h2>
+        <p class="answer">This project references the <a href="/github">GameMaker Language Functions</a> JSON for function-related information, like links and descriptions. If you encounter an issue, please open an issue report on the <a href="https://github.com/zbanack/GameMaker-Language-Functions">Github repo</a>.</p>
 
+        <h2 class="question">Does GMLsnip offer an API?</h2>
+        <p class="answer">Yes! You can read the documentation and more information about the API on the <a href="/docs">Docs page</a>.</p>
+
+        <h2 class="question">Where can I reprot a bug or issue?</h2>
+        <p class="answer">You can open an issue report on the respective <a href="/github">project repository</a>.</p>
+
+        <h2 class="question">Will you add X feature?</h2>
+        <p class="answer">Because GMLsnip is a free, hobby project, new features will be added passively. If you have suggestions or recommendations, either try to implementing them yourself or open a feature request on the respective Github project. You can check out a list of GMLsnip-related <a href="/github">project repositories</a>.</p>
 
         <h2 class="question">Can I edit the code this website generates?</h2>
         <p class="answer">You can do with this code as you please, bearing in mind the aforementioned attribution clause. But, if you edit the code, I won't be able to help you if something breaks.</p>
 
+        <h2 class="question">How can I change the colors in the output?</h2>
+        <p class="answer">You can change the colors by playing around with the hex <code>#</code> values in the CSS output. For hex colors, I highly recommend another project of mine, <a href="https://www.2020colours.com" title="2020 Colors">2020 Colors</a>.</p>
+
         <h2 class="question">Can we affiliate?</h2>
         <p class="answer">For questions regarding affiliation, please <a href="https://www.zackbanack.com/contact" title="Contact Zack Banack">contact me</a>.</p>
+
+        <?php include "../components/footer.php" ?>
+
     </div>
 
     </body>

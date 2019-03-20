@@ -9,7 +9,9 @@ ul {
 }
 
 .navbar {
+  border-top:4px solid #25a083;
   position: fixed;
+  display: inline-block;
   width:100%;
   background-color: #333;
   height:5rem;
@@ -41,7 +43,7 @@ ul {
 
 .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   background-color:white;
   min-width: 20rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -61,9 +63,7 @@ ul {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.show {display: block;}
 
 .logo {
     float:right;
@@ -83,12 +83,19 @@ ul {
 
 textarea {
     resize: none;
-    height:19rem;
+    height:19rem;z
+}
+
+.container {
+  padding-top:12rem;
 }
 
 .codeout {
     resize: none;
-    height:8rem;
+    height:6rem;
+    color:rgba(0, 0, 0, 0.5);
+    font-size:1.2rem;
+    background-color:rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -99,17 +106,16 @@ label {
     margin-top:4rem;
     text-transform: uppercase;
     font-size: 1.4rem;
-    letter-spacing: .08rem;
-    font-weight: 600;
+    letter-spacing: .06rem;
+    font-weight: 500;
+    padding-bottom:.5rem;
 }
 
 h1 {
-    padding-top:8rem;
     font-size:4rem;
 }
 
 body {
-    border-left:4px solid #25a083;
     min-height:100vh;
 }
 
@@ -125,12 +131,7 @@ body {
 }
 
 #gz_dev_code_container {
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
-}
-
-.codeout {
-    color:rgba(0, 0, 0, 0.5);
-    font-size:1.2rem;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 }
 
 #banner {
@@ -139,6 +140,10 @@ body {
     background-color:#EEE;
     text-align:center;
     line-height:3rem;
+}
+
+strong {
+  font-weight:500;
 }
 
 .question {
@@ -150,9 +155,6 @@ body {
     padding:1.5rem;
     color:rgba(0,0,0,0.7);
 }
-
-
-
 
 
 /* Social media */
@@ -188,6 +190,7 @@ body {
 
 .z-ico-bar a:hover {
   opacity:0.75;
+  color:white;
 }
 
 /* Social Sharing */

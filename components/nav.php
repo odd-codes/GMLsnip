@@ -1,7 +1,7 @@
 <div class="navbar">
   <div class="dropdown"><span class="logo"><img src="../img/logo.png" class="logoimg" title="GMLsnip logo">GMLsnip</span>
-    <button class="dropbtn">|||</button>
-    <div class="dropdown-content">
+    <button class="dropbtn" onclick="myFunction()">|||</button>
+    <div id="myDropdown" class="dropdown-content">
       <a href="/" title="Home">Home</a>
       <a href="/faq" title="Frequently Asked Questions">Help/FAQ</a>
       <a href="/docs" title="API Documentation">API Docs</a>

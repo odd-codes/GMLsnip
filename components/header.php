@@ -11,7 +11,7 @@
     <script src="https://www.gmlsnip.com/js/docs.js"></script>
     <script src="https://www.gmlsnip.com/js/demo.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://www.gmlsnip.com/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://www.gmlsnip.com/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="https://www.gmlsnip.com/css/style.css">
@@ -54,4 +54,23 @@
     <meta property="og:image:height" content="540" />
 
     <script>function hide_social() {document.getElementsByClassName('z-ico-bar')[0].style.display = "none";}</script>
+
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
 </head>

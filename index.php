@@ -8,6 +8,7 @@
 
     <body>
 
+    <?php include "components/share.php" ?>
     <?php include "components/nav.php" ?>
 
     <div class="container">
@@ -78,32 +79,53 @@ return str;</textarea>
         </script>
     </div>
 
+    <script>
+        function clip(id) {
+            let textarea = document.getElementById(id);
+            textarea.select();
+            document.execCommand("copy");
+        }
+    </script>
+
     <div class="row u-full-width">
         <h2 class="docs-header">3. CSS and JavaScript output</h2>
         <p>Copy the code below and paste it between your webpage's <code>&lt;head&gt;</code> <code>&lt;/head&gt;</code> tags. This code handles the styling for all of the GML snippets on a given page, so you only need it once per page.</p>
-        <textarea id='gz_dev_output_head' readonly class="codeout u-full-width"></textarea>
+    </div>
+
+    <div class="row u-full-width">
+        <div class="ten columns">
+            <textarea id='gz_dev_output_head' readonly class="codeout u-full-width"></textarea>
+        </div>
+        <div class="two columns">
+            <button class="button" onclick="clip('gz_dev_output_head')"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Copy</button>
+        </div>
     </div>
 
     <div class="row u-full-width">
         <h2 class="docs-header">4. HTML output</h2>
         <p>Copy the code below and paste it where you desire between your webpage's <code>&lt;body&gt;</code> <code>&lt;/body&gt;</code> tags. This code will create the code snippet seen at the top of the webpage.</p>
-        <textarea id='gz_dev_output_html' readonly class="codeout u-full-width"></textarea>
+    </div>
+
+    <div class="row u-full-width">
+        <div class="ten columns">
+            <textarea id='gz_dev_output_html' readonly class="codeout u-full-width"></textarea>
+        </div>
+        <div class="two columns">
+            <button class="button" onclick="clip('gz_dev_output_html')"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Copy</button>
+        </div>
     </div>
 
     <hr />
 
     <div class="row u-full-width" style="text-align:center;">
-        <a class="button" href="/about" target="_blank" title="About GMLsnip">About</a>
-        <a class="button" href="/faq" target="_blank" title="Frequently Asked Questions">Help/FAQ</a>
-        <a class="button" href="/addon" target="_blank" title="Google Chrome Extension and Mozilla Firefox Addon">Addon</a>
-        <a class="button" href="/docs" target="_blank" title="GMLsnip API">API</a>
-        <a class="button" href="/github" target="_blank" title="GMLsnip Github">Github</a>
-        <a class="button button-primary" href="/support" target="_blank" title="Support by donating">Support</a>
+        <a class="button" href="/faq" title="Frequently Asked Questions">Help/FAQ</a>
+        <a class="button" href="/addon" title="Google Chrome Extension and Mozilla Firefox Addon">Addon</a>
+        <a class="button" href="/docs" title="GMLsnip API">API</a>
+        <a class="button" href="/github" title="GMLsnip Github">Github</a>
+        <a class="button button-primary" href="/support" title="Support by donating">Support</a>
     </div>
 
-    <div class="row u-full-width footer" style="text-align:center;">
-        <p>&copy; 2019 <a href="https://www.zackbanack.com" title="Zack Banack">Zack Banack</a> - This project is not associated with YoYo Games, Ltd. nor the GameMaker line of products</p>
-    </div>
+    <?php include "components/footer.php" ?>
 
 </div>
 </body>
