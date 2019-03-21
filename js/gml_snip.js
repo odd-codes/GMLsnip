@@ -19,7 +19,7 @@
  *                3) https://zackbanack.com
  *              You may NOT monetize this code/variations of this code.
  *
- * @version   v1.0.3
+ * @version   v1.0.4
  * @date      March 21, 2019
  */
 
@@ -139,12 +139,10 @@ function gm_generate(input_str, snippet_name, use_lines, use_docs, use_copy, use
 
     
     // The CSS/JS to return
-    let css_output = '<!-- GMLsnip.com CSS begin -->\n<style>' + append_stylesheet + '</style>\n<!-- GMLsnip.com CSS end -->\n\n<!-- GMLsnip.com JS begin -->\n<script>function gm_clipboard(n){' + append_js + '} function gz_copy_refr(){' + append_js2 + '}<\/script>\n<!-- GMLsnip.com JS end -->';
+    let css_output = '<!-- GMLsnip.com CSS begin -->\n<style>' + append_stylesheet + '</style>\n<!-- GMLsnip.com CSS end -->\n\n<!-- GMLsnip.com JS begin -->\n<script>function gm_clipboard(n){' + append_js + '} function gz_copy_refr(){' + append_js2 + '}' + "window.addEventListener('DOMContentLoaded', (event) => { gz_copy_refr(); });" + '<\/script>\n<!-- GMLsnip.com JS end -->';
     
     // The HTML to return
     let html_out = '<!-- GMLsnip.com codeblock begin -->\n<div id="gz_capsule_' + UID + '" class="gz_cls_snippet">' + HTML + '</div></div>\n<!-- GMLsnip.com codeblock end -->';
-
-    gz_copy_refr();
 
     // Return the HTML and CSS/JS
     return {
