@@ -17,7 +17,7 @@
     <div class="row">
         <div class="eight columns">
             <h2 class="docs-header">1. Paste or write your GML below</h2>
-            <textarea id="gz_dev_input" maxlength="1024" class="u-full-width gz_dev_scroll gz_dev_updater"></textarea>
+            <textarea id="gz_dev_input" maxlength="1024" class="u-full-width gz_dev_scroll gz_dev_updater" onkeypress="typ_clear()"></textarea>
         </div>
 
       <div class="four columns u-full-width">
@@ -125,6 +125,9 @@
 
 
         <script>
+            let typ_complete = false;
+
+            document.getElementById("gz_dev_input").value = '';
             let str = '/// add_commas(integer, separation)\n';
                 str += 'var str = string(argument0);\n';
                 str += 'var sep = argument1;\n';
@@ -137,6 +140,7 @@
             let spd = 8;
 
             function auto_type() {
+                if (typ_complete) return;
               if (typ_i < str.length) {
                 document.getElementById("gz_dev_input").value += str.charAt(typ_i);
                 typ_i++;
@@ -145,10 +149,19 @@
               }
               else {
                 has_update();
+                typ_complete = true;
               }
             }
 
             auto_type();
+
+            function typ_clear() {
+                if (!typ_complete) {
+                    typ_complete = true;
+                    console.log('finished');    
+                    document.getElementById("gz_dev_input").value = '';               
+                }
+            }
         </script>
 
 </body>
