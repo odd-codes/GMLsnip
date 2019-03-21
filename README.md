@@ -12,5 +12,7 @@ Also available as a [browser extension](https://github.com/zbanack/GMLsnip-Addon
 * `input_str` `snippet_name` `use_lines` `use_docs` `use_copy` `use_tooltips`
 
 ## Built on
+* [FontAwesome](https://fontawesome.com)
+* [Skeleton](http://getskeleton.com/)
 * [GML Syntax](https://github.com/zbanack/gml_syntax)
 * [GameMaker Language Functions](https://github.com/zbanack/GameMaker-Language-Functions)
