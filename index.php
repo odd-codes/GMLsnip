@@ -124,45 +124,48 @@
 </div>
 
 
-        <script>
-            let typ_complete = false;
+<script>
+    // Make text input box the focused element
+    document.getElementById('gz_dev_input').focus();
 
-            document.getElementById("gz_dev_input").value = '';
-            let str = '/// add_commas(integer, separation)\n';
-                str += 'var str = string(argument0);\n';
-                str += 'var sep = argument1;\n';
-                str += 'for (var i = string_length(str) - (sep - 1); i > 1; i -= sep) {\n';
-                str += '\tstr = string_insert(",", str, i);\n';
-                str += '}\n';
-                str += 'return str;'
+    let typ_complete = false;
 
-            let typ_i = 0;
-            let spd = 8;
+    document.getElementById("gz_dev_input").value = '';
+    let str = '/// add_commas(integer, separation)\n';
+        str += 'var str = string(argument0);\n';
+        str += 'var sep = argument1;\n';
+        str += 'for (var i = string_length(str) - (sep - 1); i > 1; i -= sep) {\n';
+        str += '\tstr = string_insert(",", str, i);\n';
+        str += '}\n';
+        str += 'return str;'
 
-            function auto_type() {
-                if (typ_complete) return;
-              if (typ_i < str.length) {
-                document.getElementById("gz_dev_input").value += str.charAt(typ_i);
-                typ_i++;
-                if (typ_i%30==0) has_update();
-                setTimeout(auto_type, spd);
-              }
-              else {
-                has_update();
-                typ_complete = true;
-              }
-            }
+    let typ_i = 0;
+    let spd = 8;
 
-            auto_type();
+    function auto_type() {
+        if (typ_complete) return;
+      if (typ_i < str.length) {
+        document.getElementById("gz_dev_input").value += str.charAt(typ_i);
+        typ_i++;
+        if (typ_i%30==0) has_update();
+        setTimeout(auto_type, spd);
+      }
+      else {
+        has_update();
+        typ_complete = true;
+      }
+    }
 
-            function typ_clear() {
-                if (!typ_complete) {
-                    typ_complete = true;
-                    console.log('finished');    
-                    document.getElementById("gz_dev_input").value = '';               
-                }
-            }
-        </script>
+    auto_type();
+
+    function typ_clear() {
+        if (!typ_complete) {
+            typ_complete = true;
+            console.log('finished');    
+            document.getElementById("gz_dev_input").value = '';               
+        }
+    }
+</script>
 
 </body>
 </html>

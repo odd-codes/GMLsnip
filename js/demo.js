@@ -16,8 +16,8 @@
  *                2) https:/www.GMLsnip.com
  *                3) https://zackbanack.com
  *
- * @version   v1.0.0
- * @date      January 9, 2019
+ * @version   v1.0.1
+ * @date      March 21, 2019
  */
 
 /**
@@ -31,9 +31,6 @@ window.onload = function() {
  * Prepares the demo by performing several important tasks
  */
 function demo_init() {
-    // Make text input box the focused element
-    document.getElementById('gz_dev_input').focus();
-
     // Establish listeners that trigger the snippet generation
     init_listeners();
 
@@ -126,6 +123,8 @@ function has_update() {
 
     // Update DOM
     document.getElementById('gz_dev_code_container').innerHTML = gen.return_html;
+
+    gz_copy_refr();
 
     return true;
 }
