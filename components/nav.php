@@ -1,5 +1,5 @@
 <div class="navbar">
-  <div class="dropdown"><span class="logo"><img src="../img/logo.png" class="logoimg" title="GMLsnip logo">GMLsnip</span>
+  <div class="dropdown"><span class="logo"><a href="/"><img src="../img/logo.png" class="logoimg" title="GMLsnip logo">GMLsnip</a></span>
     <button class="dropbtn" onclick="myFunction()">|||</button>
     <div id="myDropdown" class="dropdown-content">
       <a href="/" title="Home">Home</a>

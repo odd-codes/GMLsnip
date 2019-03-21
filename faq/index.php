@@ -81,11 +81,9 @@
         <p class="answer">You can change the colors by playing around with the hex <code>#</code> values in the CSS output. For hex colors, I highly recommend another project of mine, <a href="https://www.2020colours.com" title="2020 Colors">2020 Colors</a>.</p>
 
         <h2 class="question">Can we affiliate?</h2>
-        <p class="answer">For questions regarding affiliation, please <a href="https://www.zackbanack.com/contact" title="Contact Zack Banack">contact me</a>.</p>
+        <p class="answer">For questions regarding affiliation, please <a href="/contact" title="Contact">contact me</a>.</p>
 
         <?php include "../components/footer.php" ?>
-
-    </div>
-
-    </body>
+</div>
+</body>
 </html>

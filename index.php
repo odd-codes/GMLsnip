@@ -13,17 +13,11 @@
 
     <div class="container">
     <h1>GameMaker Language pretty-printing</h1>
-    <p>Create stylized GML code snippets for your own websites or blog posts, like <a href="https://www.zackbanack.com/blog/gamemaker-studio-2-tips-and-tricks" target="_blank">20 GameMaker tips and tricks</a>.</p>
+    <p>Use GMLsnip to create stylized GML code snippets for your own websites or blog posts, like <a href="https://www.zackbanack.com/blog/gamemaker-studio-2-tips-and-tricks" target="_blank">20 GameMaker tips and tricks</a>.</p>
     <div class="row">
         <div class="eight columns">
             <h2 class="docs-header">1. Paste or write your GML below</h2>
-            <textarea id="gz_dev_input" maxlength="1024" class="u-full-width gz_dev_scroll gz_dev_updater">/// add_commas(integer, separation);      
-var str = string(argument0);     
-var sep = argument1;     
-for (var i = string_length(str) - (sep - 1); i > 1; i -= sep) {     
-    str = string_insert(",", str, i);     
-}     
-return str;</textarea>
+            <textarea id="gz_dev_input" maxlength="1024" class="u-full-width gz_dev_scroll gz_dev_updater"></textarea>
         </div>
 
       <div class="four columns u-full-width">
@@ -93,10 +87,10 @@ return str;</textarea>
     </div>
 
     <div class="row u-full-width">
-        <div class="ten columns">
+        <div class="nine columns">
             <textarea id='gz_dev_output_head' readonly class="codeout u-full-width"></textarea>
         </div>
-        <div class="two columns">
+        <div class="three columns">
             <button class="button" onclick="clip('gz_dev_output_head')"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Copy</button>
         </div>
     </div>
@@ -107,10 +101,10 @@ return str;</textarea>
     </div>
 
     <div class="row u-full-width">
-        <div class="ten columns">
+        <div class="nine columns">
             <textarea id='gz_dev_output_html' readonly class="codeout u-full-width"></textarea>
         </div>
-        <div class="two columns">
+        <div class="three columns">
             <button class="button" onclick="clip('gz_dev_output_html')"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Copy</button>
         </div>
     </div>
@@ -128,5 +122,34 @@ return str;</textarea>
     <?php include "components/footer.php" ?>
 
 </div>
+
+
+        <script>
+            let str = '/// add_commas(integer, separation)\n';
+                str += 'var str = string(argument0);\n';
+                str += 'var sep = argument1;\n';
+                str += 'for (var i = string_length(str) - (sep - 1); i > 1; i -= sep) {\n';
+                str += '\tstr = string_insert(",", str, i);\n';
+                str += '}\n';
+                str += 'return str;'
+
+            let typ_i = 0;
+            let spd = 8;
+
+            function auto_type() {
+              if (typ_i < str.length) {
+                document.getElementById("gz_dev_input").value += str.charAt(typ_i);
+                typ_i++;
+                if (typ_i%30==0) has_update();
+                setTimeout(auto_type, spd);
+              }
+              else {
+                has_update();
+              }
+            }
+
+            auto_type();
+        </script>
+
 </body>
 </html>

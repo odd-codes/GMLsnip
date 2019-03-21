@@ -42,8 +42,8 @@
 			<p>The API will return JSON in the first paragraph, <code>&lt;p&gt;</code><code>&lt;/p&gt;</code>, tag of the document's body, <code>&lt;body&gt;</code><code>&lt;/body&gt;</code>.</p>
 			<p>The JSON contains two objects:</p><ul><li><code>body</code> contains the HTML necessary to render the codeblock</li><li><coode>head</code> contains the CSS used to style the codeblock and the JavaScript required to use the clipboard functionality.</li></ul><p><strong>Note:</strong> the JSON return strings are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI">URI encoded</a> and must be decoded. The reason for this is because the JSON contains HTML tags which browsers attempt to render.</p>
 
-			<?php include "../components/footer.php" ?>
+    <?php include "../components/footer.php" ?>
 
-		</div>
-    </body>
+</div>
+</body>
 </html>
