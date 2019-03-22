@@ -12,8 +12,10 @@
     <?php include "components/nav.php" ?>
 
     <div class="container">
+    <p class="news"><a href="/addon"><strong>New!</strong>&nbsp;Get the Chrome Extension/Firefox Addon to prettify the Forums, /r/gamemaker, and the docs!</a></p>
     <h1>GameMaker Language pretty-printing</h1>
     <p>Use GMLsnip to create stylized GML code snippets for your own websites or blog posts, like <a href="https://www.zackbanack.com/blog/gamemaker-studio-2-tips-and-tricks" target="_blank">20 GameMaker tips and tricks</a>.</p>
+
     <div class="row">
         <div class="eight columns">
             <h2 class="docs-header">1. Paste or write your GML below</h2>

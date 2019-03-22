@@ -22,6 +22,13 @@
 
         <h2 class="question">Mozilla Firefox Extension</h2>
         <p class="answer">For Firefox users, check out the <a href="https://addons.mozilla.org/en-US/firefox/addon/gml-syntax-highlighter/">this link</a>.</p>
+        <hr />
+        <p style="text-align:center;">
+            <img src="../img/addon-0.png" title="YoYo Games GameMaker Forum before and after">
+            <img src="../img/addon-1.png" title="GameMaker Docs before and after">
+            <img src="../img/addon-2.png" title="/r/gamemaker subreddit before and after">
+        </p>
+        
     <?php include "../components/footer.php" ?>
 
 </div>
