@@ -1,4 +1,4 @@
-# GMLsnip.com
+# [GMLsnip](https://gmlsnip.com)
 Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog. 
 
 [https://gmlsnip.com](https://gmlsnip.com)
