@@ -23,7 +23,7 @@
             <li>Macros, enums, and regions</li>
             <li>Faux resource referencing (sprite*, object*, spr_*, obj_*)</li>
         </ul>
-        <p>You can view the Github repos associated with this project on the <a href="/github">Repos</a> page. There's also a <a href="/docs">GMLsnip API</a>!</p>
+        <p>You can view the Github repos associated with this project on the <a href="/gmlsnip/github">Repos</a> page. There's also a <a href="/gmlsnip/docs">GMLsnip API</a>!</p>
             <?php include "../components/footer.php" ?>
     </div>
     </body>

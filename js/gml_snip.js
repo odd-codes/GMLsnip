@@ -1,5 +1,5 @@
 /*!
- * == GMLsnip.com -> gml_snip.js ==
+ * == banack.me/gmlsnip -> gml_snip.js ==
  *
  * Dependency-free GameMaker Language syntax highlighter, code pretty-printer, and docs-linker for your website, blog.
  * 
@@ -15,7 +15,7 @@
  *              permission, this software should be distributed
  *              with visible, clickable links to any of the following:
  *                1) https://github.com/zbanack/GMLsnip
- *                2) https:/www.GMLsnip.com
+ *                2) https:/www.banack.me/gmlsnip
  *                3) https://zackbanack.com
  *              You may NOT monetize this code/variations of this code.
  *
@@ -89,7 +89,7 @@ function gm_generate(input_str, snippet_name, use_lines, use_docs, use_copy, use
     let data_header = (
         "<div id=\"" + id_header + "\" class=\"gz_cls_header\">" +
         "<div class=\"gz_header_row\"><div class=\"gz_header_col_left\" title=\"" + snippet_name + "\">" + snippet_name + "</div><div class=\"gz_header_col_right\">" +
-        "<a href=\"https://www.GMLsnip.com/\" target=\"_blank\" title=\"GMLsnip.com\" style=\"opacity:0.25;color:black; text-decoration:none;\">&#x2764;&#xFE0E;</a>" +
+        "<a href=\"https://www.gmlsnip.com\" target=\"_blank\" title=\"GMLsnip\" style=\"opacity:0.25;color:black; text-decoration:none;\">&#x2764;&#xFE0E;</a>" +
         "</div></div></div>"
     );
 
@@ -139,10 +139,10 @@ function gm_generate(input_str, snippet_name, use_lines, use_docs, use_copy, use
 
     
     // The CSS/JS to return
-    let css_output = '<!-- GMLsnip.com CSS begin -->\n<style>' + append_stylesheet + '</style>\n<!-- GMLsnip.com CSS end -->\n\n<!-- GMLsnip.com JS begin -->\n<script>function gm_clipboard(n){' + append_js + '} function gz_copy_refr(){' + append_js2 + '}' + "window.addEventListener('DOMContentLoaded', (event) => { gz_copy_refr(); });" + '<\/script>\n<!-- GMLsnip.com JS end -->';
+    let css_output = '<!-- banack.me/gmlsnip CSS begin -->\n<style>' + append_stylesheet + '</style>\n<!-- banack.me/gmlsnip CSS end -->\n\n<!-- banack.me/gmlsnip JS begin -->\n<script>function gm_clipboard(n){' + append_js + '} function gz_copy_refr(){' + append_js2 + '}' + "window.addEventListener('DOMContentLoaded', (event) => { gz_copy_refr(); });" + '<\/script>\n<!-- banack.me/gmlsnip JS end -->';
     
     // The HTML to return
-    let html_out = '<!-- GMLsnip.com codeblock begin -->\n<div id="gz_capsule_' + UID + '" class="gz_cls_snippet">' + HTML + '</div></div>\n<!-- GMLsnip.com codeblock end -->';
+    let html_out = '<!-- banack.me/gmlsnip codeblock begin -->\n<div id="gz_capsule_' + UID + '" class="gz_cls_snippet">' + HTML + '</div></div>\n<!-- banack.me/gmlsnip codeblock end -->';
 
     // Return the HTML and CSS/JS
     return {

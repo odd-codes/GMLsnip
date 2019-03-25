@@ -12,9 +12,11 @@
     <?php include "components/nav.php" ?>
 
     <div class="container">
-    <p class="news"><a href="/addon"><strong>New!</strong>&nbsp;Get the Chrome Extension/Firefox Addon to prettify the Forums, /r/gamemaker, and the docs!</a></p>
+        <?php include "components/ad.php"; ?><br/><br/>
+    <p class="news"><a href="/gmlsnip/addon?src=news"><i class="fas fa-bell"></i>&nbsp;<strong>New!</strong>&nbsp;Get the Chrome/Firefox browser Addon to see formatted GML across the web&nbsp;&raquo;</a></p>
+
     <h1>GameMaker Language pretty-printing</h1>
-    <p>Use GMLsnip to create stylized GML code snippets for your own websites or blog posts, like <a href="https://www.zackbanack.com/blog/gamemaker-studio-2-tips-and-tricks" target="_blank">20 GameMaker tips and tricks</a>.</p>
+    <p>Use GMLsnip to create stylized GML code snippets for your own websites or blog posts, like <a href="https://www.zackbanack.com/blog/gamemaker-studio-2-tips-and-tricks?src=GMLsnip-home" target="_blank">20 GameMaker tips and tricks</a>.</p>
 
     <div class="row">
         <div class="eight columns">
@@ -61,20 +63,6 @@
         </div>
     </div>
 
-    <div class="row u-full-width">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- GMLsnip -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-7699907162613938"
-            data-ad-slot="1795109857"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
     <script>
         function clip(id) {
             let textarea = document.getElementById(id);
@@ -114,13 +102,11 @@
     <hr />
 
     <div class="row u-full-width" style="text-align:center;">
-        <a class="button" href="/faq" title="Frequently Asked Questions">Help/FAQ</a>
-        <a class="button" href="/addon" title="Google Chrome Extension and Mozilla Firefox Addon">Addon</a>
-        <a class="button" href="/docs" title="GMLsnip API">API</a>
-        <a class="button" href="/github" title="GMLsnip Github">Github</a>
-        <a class="button button-primary" href="/support" title="Support by donating">Support</a>
+        <a class="button" href="/gmlsnip/faq" title="Frequently Asked Questions">How to Use</a>
+        <a class="button" href="/gmlsnip/github" title="GMLsnip Github">Developers</a>
+        <a class="button button-primary" href="/gmlsnip//support" title="Support by donating"><i class="fas fa-heart"></i>&nbsp;Support</a>
     </div>
-
+    
     <?php include "components/footer.php" ?>
 
 </div>

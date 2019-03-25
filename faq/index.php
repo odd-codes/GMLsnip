@@ -12,77 +12,121 @@
     
     <div class="container">
         <h1>GMLsnip FAQ</h1>
-        <p>This page answers questions you may have surrounding <a href="/" title="GMLsnip">GMLsnip</a> and the tools it offers.</p>
+        <p>This page answers questions you may have surrounding <a href="/gmlsnip/" title="GMLsnip">GMLsnip</a> and the tools it offers.</p>
+        <p>The <a href="/gmlsnip/about">About</a> page details the features of this tool.</p>
 
-        <hr />
+        <h2 class="question coll">What is GMLsnip?</h2>
+        <div class="coll-p">
+            <p class="answer">GMLsnip allows GameMaker developers to create HTML-embeddable, stylized GameMaker Language code snippets. This is useful for the tutorial-making community, particularly. Novice game makers referencing tutorials online may have an easier time following along if the code they see on the webpage closely resembles the code they see in the vanilla GMS2 IDE.</p>
+        </div>
 
-        <h2 class="question">What is GMLsnip?</h2>
-        <p class="answer">GMLsnip allows GameMaker developers to create HTML-embeddable, stylized GameMaker Language code snippets. This is useful for the tutorial-making community, particularly. Novice game makers referencing tutorials online may have an easier time following along if the code they see on the webpage closely resembles the code they see in the vanilla GMS2 IDE.</p>
+        <h2 class="question coll">Why did you make GMLsnip?</h2>
+        <div class="coll-p">
+            <p class="answer">My name is <a href="https://www.zackbanack.com" title="Zack Banack">Zack Banack</a> and I've been making games for over a decade, both as a hobby and a job. The GMLsnip tool was originally going to be exclusive to <a href="http://thestepevent.com" title="The Step Event">The Step Event</a>, a GameMaker tutorial series side project of mine. But, I quickly realized a lot of people could get use out of a utility like this.
+            </p>
+        </div>
 
-        <h2 class="question">Why did you make GMLsnip?</h2>
-        <p class="answer">My name is <a href="https://www.zackbanack.com" title="Zack Banack">Zack Banack</a> and I've been making games for over a decade, both as a hobby and a job. The GMLsnip tool was originally going to be exclusive to <a href="http://thestepevent.com" title="The Step Event">The Step Event</a>, a GameMaker tutorial series side project of mine. But, I quickly realized a lot of people could get use out of a utility like this.
-        </p>
+        <h2 class="question coll">Why is this free?</h2>
+        <div class="coll-p">
+            <p class="answer">The GameMaker community is an altruistic community. I'm keeping GMLsnip free because I believe in free coding resources. My mission, since starting The Step Event, has been to create the tutorials and resources I wish I had when I was new to game development. This includes the means of how information is consumed.</p>
+        </div>
 
-        <h2 class="question">Why is this free?</h2>
-        <p class="answer">The GameMaker community is an altruistic community. I'm keeping GMLsnip free because I believe in free coding resources. My mission, since starting The Step Event, has been to create the tutorials and resources I wish I had when I was new to game development. This includes the means of how information is consumed.</p>
+        <h2 class="question coll">How can I support GMLsnip?</h2>
+        <div class="coll-p">
+            <p class="answer">If you want to support this project, consider disabling ad blocking software for the website. If you're feeling highly generous and want to keep this project up and running (hosting costs money), you can <a href="/gmlsnip/support">make a donation</a>. Donations are completely optional but highly appreciated!</p>
+        </div>
 
-        <h2 class="question">How can I support GMLsnip?</h2>
-        <p class="answer">If you want to support this project, consider disabling ad blocking software for the website. If you're feeling highly generous and want to keep this project up and running (hosting costs money), you can <a href="/support">make a donation</a>. Donations are completely optional but highly appreciated!</p>
+        <h2 class="question coll">Can I change the appearance of GML on <i>other</i> websites?</h2>
+        <div class="coll-p">
+            <p class="answer">Yes! GMLsnip offers a <a href="/gmlsnip/addon">browser Extension/Addon</a>. Using the Google Chrome browser Extension or Mozilla Firefox browser Addon, it's possible to change GML codeblocks on websites like the GameMaker subreddit, the official YoYo Games forums, and the official YoYo Games documentation.</p>
+        </div>
 
-        <h2 class="question">Can I change the appearance of GML on <i>other</i> websites?</h2>
-        <p class="answer">Yes! GMLsnip offers a <a href="/addon">browser Extension/Addon</a>. Using the Google Chrome browser Extension or Mozilla Firefox browser Addon, it's possible to change GML codeblocks on websites like the GameMaker subreddit, the official YoYo Games forums, and the official YoYo Games documentation.</p>
+        <h2 class="question coll">What does the GMLSnip Browser Addon do?</h2>
+        <div class="coll-p">
+            <p class="answer">Using the browser Extension/Addon, you'll be able to see GameMaker Language code displayed in your browser just as you would in the Studio IDE. Transform dull GML code into pretty-printed, colorful code snippets across the web. Add a coat of fresh paint to the /r/gamemaker, the YoYo Games Forum, and the official GameMaker docs. Learn more about the <a href="/gmlsnip/addon">browser Extension/Addon</a>.</p>
+        </div>
 
-        <h2 class="question">What does the GMLSnip Browser Addon do?</h2>
-        <p class="answer">Using the browser Extension/Addon, you'll be able to see GameMaker Language code displayed in your browser just as you would in the Studio IDE. Transform dull GML code into pretty-printed, colorful code snippets across the web. Add a coat of fresh paint to the /r/gamemaker, the YoYo Games Forum, and the official GameMaker docs. Learn more about the <a href="/addon">browser Extension/Addon</a>.</p>
+        <h2 class="question coll">Why doesn't my code look right?</h2>
+        <div class="coll-p">
+            <p class="answer">There may be syntax edge-cases that break the parser. Also, this utility is not a code validator nor a linter. It will not "beautify" your code, clean it up, or debug. GMLsnip simply analyizes your code and stylizes it to the best of its abilities.</p>
+        </div>
 
-        <h2 class="question">Why doesn't my code look right?</h2>
-        <p class="answer">There may be syntax edge-cases that break the parser. Also, this utility is not a code validator nor a linter. It will not "beautify" your code, clean it up, or debug. GMLsnip simply analyizes your code and stylizes it to the best of its abilities.</p>
+        <h2 class="question coll">Why am I getting a message saying I need JavaScript?</h2>
+        <div class="coll-p">
+            <p class="answer">GMLsnip needs JavaScript in order to make sense of the GML code you input. It runs a lexer, something that tokenizes (categorizes), strings of text. That's how this tool is able to distinguish variables from functions and numbers from strings. Fortunately, after the code snippet is generated, JavaScript is no longer needed.</p>
+        </div>
 
-        <h2 class="question">Why am I getting a message saying I need JavaScript?</h2>
-        <p class="answer">GMLsnip needs JavaScript in order to make sense of the GML code you input. It runs a lexer, something that tokenizes (categorizes), strings of text. That's how this tool is able to distinguish variables from functions and numbers from strings. Fortunately, after the code snippet is generated, JavaScript is no longer needed.</p>
+        <h2 class="question coll">Why is the output code so big?</h2>
+        <div class="coll-p">
+            <p class="answer">Because the snippets generated by GMLsnip do not require JavaScript, they cannot be pretty-printed on the fly. While this means they're viewable to a larger percentage of the internet, it comes at the expense of being more bloated. The elements in the HTML, CSS, and clipboard script are named the way they are as to have a slim-to-none chance of interferring with anything else on your website. Overkill? Probably.</p>
+        </div>
 
-        <h2 class="question">Why is the output code so big?</h2>
-        <p class="answer">Because the snippets generated by GMLsnip do not require JavaScript, they cannot be pretty-printed on the fly. While this means they're viewable to a larger percentage of the internet, it comes at the expense of being more bloated. The elements in the HTML, CSS, and clipboard script are named the way they are as to have a slim-to-none chance of interferring with anything else on your website. Overkill? Probably.</p>
+        <h2 class="question coll">Why isn't the clipboard working?</h2>
+        <div class="coll-p">
+            <p class="answer">While most modern JavaScript-enabled browsers should be able to copy the content via the clipboard button, some (notably, mobile) still fail. Luckily, the code can be manually highlighted and either right-click -> copy'd or ctrl/command + c'd.</p>
+        </div>
 
-        <h2 class="question">Why isn't the clipboard working?</h2>
-        <p class="answer">While most modern JavaScript-enabled browsers should be able to copy the content via the clipboard button, some (notably, mobile) still fail. Luckily, the code can be manually highlighted and either right-click -> copy'd or ctrl/command + c'd.</p>
+        <h2 class="question coll">Can I remove the attributions and credit in the code?</h2>
+        <div class="coll-p">
+            <p class="answer">I highly encourage you to keep the credits and link back to <a href="https://www.gmlsnip.com" title="GMLsnip">https://www.gmlsnip.com</a> in the code that's generated on this website. If you <i>must</i> remove the credits, then please consider <a href="/gmlsnip/support">making a donation</a> as compensation.</p>
+        </div>
 
-        <h2 class="question">Can I remove the attributions and credit in the code?</h2>
-        <p class="answer">I highly encourage you to keep the credits and link back to <a href="https://www.GMLsnip.com" title="GMLsnip.com">GMLsnip.com</a> in the code that's generated on this website. If you <i>must</i> remove the credits, then please consider <a href="/support">making a donation</a> as compensation.</p>
+        <h2 class="question coll">Is GMLsnip affiliated with YoYo Games or GameMaker?</h2>
+        <div class="coll-p">
+            <p class="answer">No. This website is not &mdash; nor does it claim to be &mdash; affiliated with YoYo Games Ltd., GameMaker: Studio, GameMaker Studio 2, or any related products.</p>
+        </div>
 
-        <h2 class="question">Is GMLsnip affiliated with YoYo Games or GameMaker?</h2>
-        <p class="answer">No. This website is not &mdash; nor does it claim to be &mdash; affiliated with YoYo Games Ltd., GameMaker: Studio, GameMaker Studio 2, or any related products.</p>
+        <h2 class="question coll">Will my snippets still work if GMLsnip goes down?</h2>
+        <div class="coll-p">
+            <p class="answer">Yes! Once you copy and paste the code from this website onto yours, it's completely independent from <a href="https://www.gmlsnip.com" title="GMLsnip">https://www.gmlsnip.com</a>.</p>
+        </div>
 
-        <h2 class="question">Will my snippets still work if GMLsnip.com goes down?</h2>
-        <p class="answer">Yes! Once you copy and paste the code from this website onto yours, it's completely independent from <a href="/">GMLsnip.com</a>.</p>
+        <h2 class="question coll">The code snippet looks different on my website. Why?</h2>
+        <div class="coll-p">
+            <p class="answer">Your website's CSS rules may be overriding GMLsnip's styling. You may be using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception">"!important"</a> rule in your code.</p>
+        </div>
 
-        <h2 class="question">The code snippet looks different on my website. Why?</h2>
-        <p class="answer">Your website's CSS rules may be overriding GMLsnip's styling. You may be using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception">"!important"</a> rule in your code.</p>
+        <h2 class="question coll">Is this project open source? Can I contribute?</h2>
+        <div class="coll-p">
+            <p class="answer">Yes! You can view all the project repositories related to GMLsnip <a href="/gmlsnip/github">here</a>.</p>
+        </div>
 
-        <h2 class="question">Is this project open source? Can I contribute?</h2>
-        <p class="answer">Yes! You can view all the project repositories related to GMLsnip <a href="/github">here</a>.</p>
+        <h2 class="question coll">GMLsnip incorrectly linked a function/provided the wrong tooltip description</h2>
+        <div class="coll-p">
+            <p class="answer">This project references the <a href="/gmlsnip/github">GameMaker Language Functions</a> JSON for function-related information, like links and descriptions. If you encounter an issue, please open an issue report on the <a href="https://github.com/zbanack/GameMaker-Language-Functions">Github repo</a>.</p>
+        </div>
 
-        <h2 class="question">GMLsnip incorrectly linked a function/provided the wrong tooltip description</h2>
-        <p class="answer">This project references the <a href="/github">GameMaker Language Functions</a> JSON for function-related information, like links and descriptions. If you encounter an issue, please open an issue report on the <a href="https://github.com/zbanack/GameMaker-Language-Functions">Github repo</a>.</p>
+        <h2 class="question coll">Does GMLsnip offer an API?</h2>
+        <div class="coll-p">
+            <p class="answer">Yes! You can read the documentation and more information about the API on the <a href="/gmlsnip/docs">Docs page</a>.</p>
+        </div>
 
-        <h2 class="question">Does GMLsnip offer an API?</h2>
-        <p class="answer">Yes! You can read the documentation and more information about the API on the <a href="/docs">Docs page</a>.</p>
+        <h2 class="question coll">Where can I reprot a bug or issue?</h2>
+        <div class="coll-p">
+            <p class="answer">You can open an issue report on the respective <a href="/gmlsnip/github">project repository</a>.</p>
+        </div>
 
-        <h2 class="question">Where can I reprot a bug or issue?</h2>
-        <p class="answer">You can open an issue report on the respective <a href="/github">project repository</a>.</p>
+        <h2 class="question coll">Will you add X feature?</h2>
+        <div class="coll-p">
+            <p class="answer">Because GMLsnip is a free, hobby project, new features will be added passively. If you have suggestions or recommendations, either try to implementing them yourself or open a feature request on the respective Github project. You can check out a list of GMLsnip-related <a href="/gmlsnip/github">project repositories</a>.</p>
+        </div>
 
-        <h2 class="question">Will you add X feature?</h2>
-        <p class="answer">Because GMLsnip is a free, hobby project, new features will be added passively. If you have suggestions or recommendations, either try to implementing them yourself or open a feature request on the respective Github project. You can check out a list of GMLsnip-related <a href="/github">project repositories</a>.</p>
+        <h2 class="question coll">Can I edit the code this website generates?</h2>
+        <div class="coll-p">
+            <p class="answer">You can do with this code as you please, bearing in mind the aforementioned attribution clause. But, if you edit the code, I won't be able to help you if something breaks.</p>
+        </div>
 
-        <h2 class="question">Can I edit the code this website generates?</h2>
-        <p class="answer">You can do with this code as you please, bearing in mind the aforementioned attribution clause. But, if you edit the code, I won't be able to help you if something breaks.</p>
+        <h2 class="question coll">How can I change the colors in the output?</h2>
+        <div class="coll-p">
+            <p class="answer">You can change the colors by playing around with the hex <code>#</code> values in the CSS output. For hex colors, I highly recommend another project of mine, <a href="https://www.2020colours.com" title="2020 Colors">2020 Colors</a>.</p>
+        </div>
 
-        <h2 class="question">How can I change the colors in the output?</h2>
-        <p class="answer">You can change the colors by playing around with the hex <code>#</code> values in the CSS output. For hex colors, I highly recommend another project of mine, <a href="https://www.2020colours.com" title="2020 Colors">2020 Colors</a>.</p>
+        <h2 class="question coll">Can we affiliate?</h2>
+        <div class="coll-p">
+            <p class="answer">For question regarding affiliation, please <a href="/gmlsnip/contact" title="Contact">contact me</a>.</p>
+        </div>
 
-        <h2 class="question">Can we affiliate?</h2>
-        <p class="answer">For questions regarding affiliation, please <a href="/contact" title="Contact">contact me</a>.</p>
-
+        <?php $show_ad = True; ?>
         <?php include "../components/footer.php" ?>
 </div>
 </body>

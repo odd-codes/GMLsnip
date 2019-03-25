@@ -1,7 +1,7 @@
 /*!
- * == GMLsnip.com -> demo.js ==
+ * == banack.me/gmlsnip -> demo.js ==
  *
- * Used specifically for the website https://www.GMLsnip.com
+ * Used specifically for the website https://www.banack.me/gmlsnip
  *       
  * @author    Zack Banack <https://zackbanack.com>
  *              Particular code or functions may have their own
@@ -13,7 +13,7 @@
  *              permission, this software should be distributed
  *              with visible, clickable links to any of the following:
  *                1) https://github.com/zbanack/GMLsnip
- *                2) https:/www.GMLsnip.com
+ *                2) https:/www.banack.me/gmlsnip
  *                3) https://zackbanack.com
  *
  * @version   v1.0.1

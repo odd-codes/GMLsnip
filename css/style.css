@@ -3,9 +3,17 @@ ul {
 }
 
 .news {
-    padding:10px;
-    background-color:rgba(0,0,0,0.1);
+    padding:1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    background-color:rgba(0,0,0,0.05);
     border-radius:8px;
+    font-size:1.4rem;
+}
+
+.news a, .news a:hover {
+  color:rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 .navbar:before {
@@ -16,6 +24,12 @@ ul {
     background:linear-gradient(to left, #00b4ab, #25a083);
     top:-4px;
     left:0;
+}
+
+.mn-block {
+  width:2rem;
+  text-align:center;
+  margin-right:1rem;
 }
 
 .navbar {
@@ -137,6 +151,7 @@ h1 {
 
 body {
     min-height:100vh;
+    overflow-y: scroll;
 }
 
 .footer {
@@ -270,4 +285,34 @@ strong {
   .z-ico-bar a {
     width:16.60%;
   }
+}
+
+/* Collapse */
+.coll {
+  cursor: pointer;
+  padding-bottom:1rem;
+  border-top:1px solid #EEE;
+  padding-top:1rem;
+}
+
+.coll:after {
+  content: '\002B';
+  float: left;
+  margin-right: 1rem;
+}
+
+.coll-active:after {
+  content: "\2212";
+}
+
+.coll-p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+}
+
+.getcode {
+  text-align:center;
+  font-size:2rem;
+  font-weight:500;
 }

@@ -13,8 +13,8 @@
     <div class="container">
         <h1>Contact GMLsnip</h1>
         <ul>
-            <li>If you have a feature request or would like to file a bug, please file it publically in the respective <a href="/github">Github repo</a>.</li>
-            <li>If you have a question about GMLsnip, please first refer to the <a href="/faq">Frequently Asked Questions</a> page.</li>
+            <li>If you have a feature request or would like to file a bug, please file it publically in the respective <a href="/gmlsnip/github">Github repo</a>.</li>
+            <li>If you have a question about GMLsnip, please first refer to the <a href="/gmlsnip/faq">Frequently Asked Questions</a> page.</li>
             <li>For all other inqueries, you can contact lead developer <a href="https:/www.zackbanack.com/">Zack Banack</a>.</li>
         </ul>
     <?php include "../components/footer.php" ?>
